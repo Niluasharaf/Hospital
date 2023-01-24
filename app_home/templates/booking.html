@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+Booking
+{% endblock %}
+ 
+
+{% block content %}
+
+<h1 class="mx-5 py-4 text-center">Patient Information</h1>
+<section>
+    <div class="container w-50 py-3 text-center my-4 ">
+     <form action="" method="POST">
+        {% csrf_token %}
+       {{form.as_p}}
+       <button class="btn btn-primary my-4 " type="submit">Submit</button>
+     </form>
+    </div>
+
+</section>
+
+
+{% endblock %}

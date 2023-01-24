@@ -1,0 +1,316 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+Home
+{% endblock %}
+ 
+
+{% block content %}
+
+{% load static %}
+<section>
+    <div class="container pb-5">
+        <img src="{% static 'images/front.jpg.webp' %}">
+      
+    </div>
+</section><br>
+
+
+
+<!--selection_dropdown-->
+<section>
+    <form action="/booking/">
+    <div class="container-fluid bg-success py-3">
+        <div class="row py-2 ">
+            <h1 class="qsearch ms-3">Quick Search</h1>
+
+        
+
+
+            <div class=" selection col-lg-4 col-md-4 col-sm-12   text-center py-5">
+                <select class="px-4 rounded p-2" name="department" >
+                    
+                    <option>Select  Department</option>
+                    <option>Cardiology</option>
+                    <option>Neurology</option>
+                    <option>Paediatric</option>
+                </select>
+            </div>
+
+
+            <div class=" selection col-lg-4 col-md-4 col-sm-12   text-center py-5">
+                <select class="px-5 rounded p-2" name="doctor" >
+                
+                    <option>Select Doctor</option>
+
+                    <optgroup label="Cardiology">
+                    <option>Dr. Manoj </option>
+                    <option>Dr. Ammar Abdul</option>
+                    <option>Dr. Carlos</option>
+                    </optgroup>
+
+                    <optgroup label="Neurology">
+                    <option>Dr. Dima Jabir</option>
+                    <option>Dr. Saaid Ghani</option>
+                    <option>Dr. Stalin John</option>
+                    </optgroup>
+
+                    <optgroup label="Paediatric">
+                    <option>Dr. Geetha Nambiar</option>
+                    <option>Dr. Ayesha Ahmed</option>
+                    <option>Dr. Gayathri Mahesh</option>
+                    </optgroup>
+
+                    
+                    <optgroup label="Dermatology">
+                    <option>Dr. Nayan Parvathy</option>
+                    <option>Dr.Maya Varma</option>
+                    </optgroup>
+
+                
+                </select>
+            </div>
+
+
+            <div class=" selection col-lg-4 col-md-4 col-sm-12  text-center py-5">
+                <input type="submit"  class="px-4 p-1 rounded text-success" value="Book Appointment">
+            </div>
+
+
+        
+        </div>
+     </div>
+    </form>
+</section>
+<!--selection_dropdown_end-->
+
+
+
+
+<!--700+ squares_start-->
+
+<section>
+    <div class="container  py-5">
+        <div class="row justify-content-md-center text-center py-5  ">
+
+            <div class="col  col-lg-2 squares py-5">
+                <h2>700 +<br>Doctors</h2>
+            </div>
+            <div class=" col col-lg-2 squares py-5">
+                <h2>50 +<br>Specialities</h2>
+            </div>
+            <div class=" col col-lg-2 squares py-5">
+                <h2>700 +<br>Beds</h2>
+            </div>
+            <div class="col col-lg-2 squares py-5">
+                <h2>10M +<br>Lives:Touched</h2>
+            </div>
+            <div class="col col-lg-2 squares py-5">
+                <h2>3Lac +<br>Patients</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--700+ squares_end-->
+
+
+<!--services-->
+
+<section id="services">
+    <div class="container py-2">
+            <h1 class="text-center mx-auto py-5 fw-bold">Our Services</h1>
+            <div class="row mb-5">
+            
+                <div class="col-3 serv ">
+                    <div>
+                    <img class=" img-fluid" src="{% static '/images/neuro.jpg'%}" style="height:172px; width:180px" >
+                    </div>
+                   
+                    <div class=" text-center py-3 ">
+                    <p class="mb-0 p- fs-4 fw-bold mb-4">Neurology</p>
+                    <button class="btn "><small>KNOW MORE</small></button>
+                    </div>
+                </div>
+
+
+                <div class="col-3 serv ">
+                    <div>
+                    <img class=" img-fluid" src="{% static '/images/cardio.jpg'%}" >
+                    </div>
+                
+                   
+                    <div class="  text-center py-3 ">
+                    <p class="mb-0 p- fs-4 fw-bold mb-4">Cardiology</p>
+                    <button class="btn "><small>KNOW MORE</small></button>
+                    </div>
+                </div>
+
+
+
+                <div class="col-3 serv ">
+                    <div>
+                    <img class=" img-fluid" src="{% static '/images/women.jpg'%}" style="height:175px; width:180px" >
+                    </div>
+                
+                   
+                    <div class="  text-center py-3 ">
+                    <p class="mb-0 p- fs-4 fw-bold mb-4">Women's Health</p>
+                    <button class="btn "><small>KNOW MORE</small></button>
+                    </div>
+                </div>
+
+
+                <div class="col-3 serv ">
+                    <div>
+                    <img class=" img-fluid" src="{% static '/images/pediatric.jpg'%}" style="height:176px; width:200px" >
+                    </div>
+                
+                   
+                    <div class="  text-center py-3 ">
+                    <p class="mb-0 p- fs-4 fw-bold mb-4">Pediatrics</p>
+                    <button class="btn "><small>KNOW MORE</small></button>
+                    </div>
+                </div>
+            </div>    
+
+                
+            <div class="row mb-5">
+                <div class="col-3 serv ">
+                    <div>
+                    <img class=" img-fluid" src="{% static '/images/renal.jpg'%}" style="height:174px; width:180px">
+                    </div>
+                
+                   
+                    <div class="  text-center py-3 ">
+                    <p class="mb-0 p- fs-4 fw-bold mb-4">Renal</p>
+                    <button class="btn "><small>KNOW MORE</small></button>
+                    </div>
+                </div>
+
+                <div class="col-3 serv ">
+                    <div>
+                    <img class=" img-fluid" src="{% static '/images/onco.jpg'%}" style="height:175px; width:180px" >
+                    </div>
+                
+                   
+                    <div class="  text-center py-3 ">
+                    <p class="mb-0 p- fs-4 fw-bold mb-4">Oncology</p>
+                    <button class="btn "><small>KNOW MORE</small></button>
+                    </div>
+                </div>
+
+
+                <div class="col-3 serv ">
+                    <div>
+                    <img class=" img-fluid" src="{% static '/images/derma.png' %}" style="height:177px; width:180px" >
+                    </div>
+                
+                   
+                    <div class="  text-center py-3 ">
+                    <p class="mb-0 p- fs-4 fw-bold mb-4">Dermatology</p>
+                    <button class="btn "><small>KNOW MORE</small></button>
+                    </div>
+                </div>
+
+                <div class="col-3 serv ">
+                    <div>
+                    <img class=" img-fluid" src="{% static '/images/ortho.jpg'%}" style="height:172px; width:180px" >
+                    </div>
+                
+                   
+                    <div class="  text-center py-3 ">
+                    <p class="mb-0 p- fs-4 fw-bold mb-4">Orthopaedic</p>
+                    <button class="btn "><small>KNOW MORE</small></button>
+                    </div>
+                </div>
+            </div>
+       
+    </div>
+</section>
+
+
+
+
+<!--services_end-->
+
+<!--star_hand-->
+
+<section id="star ">
+    <div class="container pt-6 px-2">
+        <div class="row mb-5 pt-5">
+           <div class=" col col-md-3  ">
+             <img  src="/static/images/star.jpg" height="220px" width="230px">
+           </div>
+
+           <div class=" col col-md-3 px-2 ">
+              <h1>4.7</h1>
+              <h2 class="text-success">Google Ratings</h2>
+              <p>Our rating on Google given by our patients,explain our dedication towards them
+                 and the quality of service provided.</p> 
+           </div>
+
+           <div class=" col col-md-3 ">
+             <img src="/static/images/nps.png" style="height: 180px;" width="190px">
+           </div>
+
+           <div class="col col-md-3 px-2 ">
+            <h1>76 %</h1>
+            <h2 class="text-success">NPS Scores</h2> 
+            <p>
+                Our NPS score shows the highest level of satisfaction we offer to our patients for the tratement.
+            </p>
+           </div>
+           
+        </div>
+    </div>
+</section>
+
+<!--star_hand_end-->
+
+
+<!--Callback-->
+<form action="/callback_insert/" method="POST">
+    {% csrf_token %}
+<section id="call-back">
+
+    <div class="container py-5 ">
+
+        <div class="row py-2">
+            <div class="col-6 ">
+                <input type="text" class="form-control form-control-lg "  placeholder="First Name" name="lname">
+            </div>
+            
+            <div class="col-6">
+                <input type="text" class="form-control form-control-lg " placeholder="Last Name" name="fname">
+            </div>
+        </div>
+
+        <div class="row py-2">
+            <div class="col-6 ">
+                <input type="email" class="form-control form-control-lg "  placeholder="Email" name="email">
+            </div>
+            
+            <div class="col-6">
+                <input type="text" class="form-control form-control-lg " placeholder="+971" name="phone">
+            </div>
+        </div>
+        
+       
+            <div class="row justify-content-sm-center my-5 ">
+                <div class="col-md text-center ">
+                  <button type="submit" class="btn btn-primary bg-success " onclick="myfun()" >
+                    ENQUIRE NOW</button>
+                </div>
+           </div>
+     
+    </div>
+
+</section>
+</form>
+
+<!--Callback end-->
+
+{% endblock %}

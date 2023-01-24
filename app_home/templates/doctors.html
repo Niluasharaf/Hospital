@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+Doctors
+{% endblock %}
+ 
+
+{% block content %}
+
+
+<section>
+    <div class="container-fluid bg-success py-3">
+      <h2 class="text-white mx-4 text-center">Our Experts</h2>
+    </div>
+</section>
+
+<section id="doctor">
+    <div class="container">
+        
+        <div class="row ">
+            {% for i in obj %}
+            
+            <div class="col-3 py-5 mx-3 ">
+                <a class="text-decoration-none" href="#">
+                <div class="bg-light">
+                  <img src="{{i.doc_image.url}}" class="card-img-top" alt="doctor" style="height: 280px;" width="100px";>
+                </div>
+                 <div class=" text-center text-black py-2">
+                    <h2>{{i.doc_name}}</h2>
+                    <p>{{i.doc_spec}}</p>
+                 </div>
+                </a>
+            </div>
+         
+          {% endfor %}
+        </div>
+        
+    </div>
+</section>
+{% endblock %}

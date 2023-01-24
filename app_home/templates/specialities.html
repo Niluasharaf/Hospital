@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+Specialities
+{% endblock %}
+ 
+
+{% block content %}
+
+<section>
+<div class="container py-5">
+    <h1 class="text-center py-2">Our Departments</h1>
+    <div class="row">
+        {% for i in obj %}
+        <div class="bg-light py-4">
+            <h1>{{i.spec_name}}</h1>
+            <p>{{i.spec_description}}</p>
+       </div>
+       {% endfor %}
+    </div>
+</div>
+    
+<section>
+
+
+{% endblock %}

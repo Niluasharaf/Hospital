@@ -1,0 +1,120 @@
+body{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+    
+    
+}
+
+body{
+    font-family:'poppins';
+}
+
+
+.nav1{
+    box-shadow:0px 0px 12px  #3b67b9 inset;
+}
+
+
+.needhelp a{
+   color: #035c2b;
+    text-decoration: none;
+    font-size:large;
+}
+
+h1{
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+h2{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+h3{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+/*navbar*/
+.nav2 li a{
+    font-size: large;
+    color: #035c2b;
+    
+}
+.nav2 li a:hover{
+    display: block;
+    color:white;
+    background-color: #035c2b;
+    border-radius: 8px;
+}
+
+
+
+/*selection*/
+.qsearch{
+    color:white
+}
+.selection select:hover{
+    color: #054924;
+    
+}
+.selection select{
+    color: #054924;
+}
+
+
+
+/*cards*/
+.serv .btn{
+    background-color: #054924;
+  opacity:0;
+  transform: translateY(20px);
+  transition: 0.3s all;
+  border-radius: 10px;
+}
+
+.serv:hover .btn
+    {
+  opacity: 1;
+  transform: translateY(0);
+  background-color: #054924;
+  color: white;
+  
+}
+
+
+#services .shadow p{
+   
+ box-shadow:0px 0px 10px  #035c2b inset;
+}
+
+
+
+/*squares*/
+
+/* .squares{
+    animation-name:animate;
+    animation-duration: 4s;
+}
+@keyframes animate {
+    from{background-color:green;}
+    to{background-color:white;}
+} */
+
+.squares h2{
+    color:#054924;
+}
+.squares:hover{
+   
+    background-color: #054924;
+    color: white;
+    transform:skewY(8deg);
+}
+.squares:hover h2{
+    color:white;
+}
+
+#doctor a{
+    text-decoration: none;
+    color: black;
+}
